@@ -32,7 +32,7 @@ can be overridden by DCAVENUE["SECURE"] setting.
 
 To initiate payment, redirect user to *reverse("dcavenue-start")* with GET
 parameters, Order_Id, Amount, and Currency. Once payment has been successful,
-DCAVENUE["CALLBACK"] would be called with data dict as parameter. Order_Od is
+DCAVENUE["CALLBACK"] would be called with data dict as parameter. Order_Id is
 optional, if not passed it will be calculated. The callback must return a HTTP
 response after handling the payment/failure [could be html response or could be
 http response redirect, recommended]. An optional callback method is provided,
